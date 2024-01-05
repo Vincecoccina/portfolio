@@ -11,16 +11,21 @@ const Page = () => {
   // Précisez le type de l'élément que listRef va référencer
   const listRef = useRef<HTMLDivElement>(null);
   const cardWidth = 550;
+
   const handleClick = (direction: string) => {
     if (listRef.current) {
+      let newSlideNumber = slideNumber;
       if (direction === "left" && slideNumber > 0) {
-        setSlideNumber(slideNumber - 1);
+        newSlideNumber = slideNumber - 1;
       } else if (direction === "right" && slideNumber < Projects.length - 1) {
-        setSlideNumber(slideNumber + 1);
+        newSlideNumber = slideNumber + 1;
       }
 
-      // Calcul du déplacement total basé sur la largeur de la carte et le numéro de la diapositive
-      const totalShift = slideNumber * cardWidth;
+      // Mise à jour de l'état slideNumber
+      setSlideNumber(newSlideNumber);
+
+      // Utiliser newSlideNumber pour calculer le déplacement
+      const totalShift = newSlideNumber * cardWidth;
       listRef.current.style.transform = `translateX(-${totalShift}px)`;
     }
   };
@@ -29,12 +34,14 @@ const Page = () => {
     <main className="w-screen h-screen relative">
       <div
         className="w-screen h-screen flex flex-col items-center justify-center bg-center bg-cover"
-        style={{ backgroundImage: "url(/bg_2.png)" }}
+        style={{ backgroundImage: "url(/bg.png)" }}
       >
         <div className="flex flex-col items-center gap-4">
-          <h1 className="font-semibold text-white text-[50px]">Mes Projets</h1>
-          <p className="text-gray-400 text-[20px]">
-            Avec les technologies reactjs, nodejs ou nextjs
+          <h1 className="font-semibold text-white text-[50px]">
+            Mes<span className="text-orange-500 font-light"> projets</span>
+          </h1>
+          <p className="text-gray-300 text-[20px] bg-[rgba(0,0,0,0.6)] py-1 px-5">
+            Réalisés avec react, nodejs ou nextjs
           </p>
         </div>
         <div className="relative w-[65%] mt-6 overflow-hidden">

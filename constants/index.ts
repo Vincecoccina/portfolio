@@ -80,6 +80,12 @@ export const SkillData = [
     height: 40,
   },
   {
+    name: "Docker",
+    Image: "/docker.png",
+    width: 40,
+    height: 40,
+  },
+  {
     name: "Redux",
     Image: "/redux.png",
     width: 80,

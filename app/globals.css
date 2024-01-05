@@ -8,13 +8,13 @@ body{
 
 @keyframes brightnessBackground {
   0% {
-    filter: brightness(1);
+    transform: scale(1);
   }
   50% {
-    filter: brightness(1.5);
+    transform: scale(1.1);
   }
   100% {
-    filter: brightness(1);
+    transform: scale(1);
   }
 }
 

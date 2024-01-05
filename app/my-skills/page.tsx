@@ -18,13 +18,13 @@ const Page = () => {
           <div className="flex flex-col items-center gap-4">
             <h1 className="font-semibold text-white text-[50px]">
               Compétences{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+              <span className="text-orange-500 font-light">
                 {" "}
                 &{" "}
               </span>
               Technologies
             </h1>
-            <p className="text-gray-400 text-[20px]">
+            <p className="text-gray-300 text-[20px] bg-[rgba(0,0,0,0.6)] py-1 px-5">
               Applications web, trading algoritmique et Web 3.0
             </p>
           </div>

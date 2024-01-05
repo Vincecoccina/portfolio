@@ -6,23 +6,21 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="fixed top-0 z-[40] w-full h-[100px] bg-transparent flex justify-between items-center px-10 md:px-20">
-      <div className="flex flex-row gap-3 items-center">
+      <div className="flex flex-row gap-2 items-center">
         <div className="relative">
-          {/* <Image
-            src="/horseLogo.jpg"
+          <Image
+            src="/logo.png"
             alt="logo"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
             className="w-full h-full object-contain rounded-full"
-          /> */}
+          />
         </div>
-        <h1 className="text-white text-[25px] font-semibold">
-          Vincent{" "}
-          <span className="text-orange-500">
-            {" "}
-            Coccina{" "}
-          </span>
-        </h1>
+        <Link href="/">
+          <h1 className="text-white text-[25px] font-semibold">
+            Vincent <span className="text-orange-500 font-light"> Coccina </span>
+          </h1>
+        </Link>
       </div>
 
       <div className="flex flex-row gap-5 mb-2">
