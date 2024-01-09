@@ -16,6 +16,7 @@ const ContactForm: React.FC = () => {
   const [statusMessage, setStatusMessage] = useState<string>("");
   const [statusMessageClass, setStatusMessageClass] = useState<string>("");
   const [formData, setFormData] = useState<FormData>(initialFormData);
+ 
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -34,7 +35,7 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/api/contactForm", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contactForm`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

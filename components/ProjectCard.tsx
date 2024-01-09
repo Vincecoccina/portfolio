@@ -23,7 +23,7 @@ const ProjectCard = ({ image, title, text }: Props) => {
   return (
     <div
       onClick={handleFlip}
-      className="w-[550px] h-[380px] rounded-md cursor-pointer relative flex-shrink-0 border shadow-md filter brightness-110"
+      className="w-[350px] h-[350px] md:w-[550px] md:h-[380px] rounded-md cursor-pointer relative flex-shrink-0 shadow-md filter brightness-110"
     >
       <motion.div
         className="absolute inset-0"
@@ -34,14 +34,14 @@ const ProjectCard = ({ image, title, text }: Props) => {
         style={{ transformStyle: "preserve-3d" }}
       >
         <div
-          style={{ backgroundImage: `url(${image})`, backfaceVisibility: "hidden" }}
+          style={{ backgroundImage: `url(${image})`}}
           className="flex items-center justify-center flip-card-front absolute inset-0 bg-cover bg-center text-white rounded-lg p-4"
         >
          {/* <Visibility sx={{fontSize: "50px"}}/> */}
         </div>
         <div
-          style={{ backgroundImage: `url(${image})`, backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
-          className="flip-card-back absolute inset-0 bg-cover bg-center text-white rounded-lg p-4"
+          style={{backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
+          className="flip-card-back absolute inset-0 bg-black bg-center text-white rounded-lg p-4"
         >
           {/* Contenu du verso */}
           <div className="absolute inset-0 w-full h-full rounded-md bg-black opacity-50" />

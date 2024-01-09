@@ -16,7 +16,7 @@ const Page = () => {
       >
         <div className="flex flex-col gap-20 max-w-[80%] mx-auto text-center items-center">
           <div className="flex flex-col items-center gap-4">
-            <h1 className="font-semibold text-white text-[50px]">
+            <h1 className="text-[30px] sm:text-[40px] md:text-[50px] text-white font-semibold">
               Compétences{" "}
               <span className="text-orange-500 font-light">
                 {" "}
@@ -24,7 +24,7 @@ const Page = () => {
               </span>
               Technologies
             </h1>
-            <p className="text-gray-300 text-[20px] bg-[rgba(0,0,0,0.6)] py-1 px-5">
+            <p className="text-gray-300 text-[15px] sm:text-[20px] md:text-[17px] font-semibold bg-[rgba(0,0,0,0.6)] py-1 px-5">
               Applications web, trading algoritmique et Web 3.0
             </p>
           </div>
@@ -42,7 +42,7 @@ const Page = () => {
             {SkillData.map((skill, index) => (
               <SwiperSlide key={index}>
                 <Tooltip title={skill.name}>
-                  <div className="flex items-center justify-center h-[100px] w-[100px] bg-black border rounded-[10px]">
+                  <div className="flex items-center justify-center h-[50px] w-[50px] md:w-[100px] md:h-[100px] bg-black border rounded-[10px]">
                     <Image
                       src={skill.Image}
                       alt={skill.name}
@@ -70,7 +70,7 @@ const Page = () => {
             {SkillData.map((skill, index) => (
               <SwiperSlide key={index}>
                 <Tooltip title={skill.name}>
-                  <div className="flex items-center justify-center h-[100px] w-[100px] bg-black border rounded-[10px]">
+                  <div className="flex items-center justify-center h-[50px] w-[50px] md:w-[100px] md:h-[100px] bg-black border rounded-[10px]">
                     <Image
                       src={skill.Image}
                       alt={skill.name}

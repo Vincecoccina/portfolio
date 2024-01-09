@@ -17,7 +17,7 @@ const Navbar = () => {
           />
         </div>
         <Link href="/">
-          <h1 className="text-white text-[25px] font-semibold">
+          <h1 className="text-white text-[20px] md:text-[25px] font-semibold">
             Vincent <span className="text-orange-500 font-light"> Coccina </span>
           </h1>
         </Link>

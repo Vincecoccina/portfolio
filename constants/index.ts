@@ -120,22 +120,22 @@ export const Socials = [
 export const Projects = [
   {
     title: "Edukarta",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    text: "Application web fullstack consacrée à l'éducation. Technologies utilisées: Nextjs, MongoDB",
     src: "/edukarta.png",
   },
   {
     title: "Plateforme NFT",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    text: "DAPP consacrée à la création et l'échange d'NFT. Technologie utlisée: Nextjs ",
     src: "/nft.png",
   },
   {
     title: "Video Club",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    text: "Application Web fullstack consacrée au cinéma. Technologies utlisées : Nextjs, MongoDB, Prisma",
     src: "/video_club.png",
   },
   {
     title: "Blog",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    text: "Application Web fullstack consacrée à la Thaïlande. Technologies utlisées : Nextjs, MongoDB, Prisma",
     src: "/blog.png",
   }
      

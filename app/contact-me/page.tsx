@@ -10,7 +10,7 @@ const Page = () => {
         style={{ backgroundImage: "url(/bg.png)" }}
       >
         <div
-          className="h-[60%] w-[50%] relative rounded-xl border border-white bg-[rgba(0,0,0,0.7)]"
+          className="h-[60%] w-[90%] md:w-[70%] lg:w-[50%] relative rounded-xl border border-white bg-[rgba(0,0,0,0.7)]"
         >
           <div className="flex items-center justify-center w-[100%] h-[100%] py-5 px-5">
             <ContactForm />

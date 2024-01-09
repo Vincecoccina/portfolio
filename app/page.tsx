@@ -8,15 +8,15 @@ export default function Home() {
         className="flex items-center w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url(/bg.png)" }}
       >
-        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
-          <h1 className="text-[50px] text-white font-semibold">
+        <div className="pl-10 lg:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
+          <h1 className="text-[25px]  md:text-[50px] text-white font-semibold">
             Transformez vos idées en
             <span className="text-orange-500 font-light">
               {" "}
               réalité numérique
             </span>
           </h1>
-          <p className="text-gray-300 text-[15px] font-semibold">
+          <p className="text-gray-300 text-[13px] md:text-[17px] font-semibold">
             Spécialisé dans la création de solutions digitales, je vous
             accompagne dans la concrétisation de vos projets les plus audacieux.
             Qu'il s'agisse du développement d'applications web innovantes ou
@@ -40,8 +40,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 right-[50px] z-[15]">
-        <Image src="/moi.png" alt="cliff" width={600} height={600} />
+      <div className="absolute bottom-0 right-0 md:right-0 lg:right-[50px] mx-auto md:mx-0 w-max z-[1]">
+        <Image
+          src="/moi.png"
+          alt="cliff"
+          width={300}
+          height={300}
+          className="w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px]"
+        />
       </div>
 
       <Image
