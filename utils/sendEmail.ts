@@ -13,18 +13,16 @@ export const sendEmail = async ({
 }: EmailParams): Promise<{ message: string }> => {
   return new Promise((resolve, reject) => {
     const transporter = nodemailer.createTransport({
-      host: process.env.HOST,
-      port: 465,
-      secure: true,
+      service: 'gmail',
       auth: {
-        user: process.env.MY_EMAIL,
-        pass: process.env.MY_PASSWORD,
+        user: process.env.GOOGLE_EMAIL,
+        pass: process.env.GOOGLE_PASSWORD,
       },
     });
 
     const mailOptions = {
       from: email,
-      to: process.env.MY_EMAIL,
+      to: process.env.GOOGLE_EMAIL,
       subject: `Message de ${name}`,
       html: `
         <p>Vous avez reçu un nouveau message de : <b>${name}</b> (${email})</p>
