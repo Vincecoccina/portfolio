@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Vincent Coccina | développeur Web",
-  description: "Web developper",
+  description: "Application web, trading algoritmique, web 3.0, etc...",
 };
 
 export default function RootLayout({
