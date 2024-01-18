@@ -72,7 +72,7 @@ const Page = () => {
           </p>
         </div>
         <div
-          className="gap-2 mt-6 grid grid-cols-1 md:grid-cols-2"
+          className="gap-2 mt-6 grid grid-cols-1 lg:grid-cols-2"
         >
           {Projects.map((project, index) => (
             <ProjectCard
