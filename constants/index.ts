@@ -122,22 +122,14 @@ export const Projects = [
     title: "Edukarta",
     text: "Application web fullstack consacrée à l'éducation. Technologies utilisées: Nextjs, MongoDB",
     src: "/edukarta.png",
+    link: "https://www.edukarta.com"
   },
   {
     title: "Plateforme NFT",
     text: "DAPP consacrée à la création et l'échange d'NFT. Technologie utlisée: Nextjs ",
-    src: "/nft.png",
+    src: "/uncut.png",
+    link: "https://www.edukarta.com"
   },
-  {
-    title: "Video Club",
-    text: "Application Web fullstack consacrée au cinéma. Technologies utlisées : Nextjs, MongoDB, Prisma",
-    src: "/video_club.png",
-  },
-  {
-    title: "Blog",
-    text: "Application Web fullstack consacrée à la Thaïlande. Technologies utlisées : Nextjs, MongoDB, Prisma",
-    src: "/blog.png",
-  }
      
 ];
 
